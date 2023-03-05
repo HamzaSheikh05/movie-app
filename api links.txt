@@ -1,0 +1,13 @@
+Key: 658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Each: https://api.themoviedb.org/3/movie/{movie_id}?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Now Playing: https://api.themoviedb.org/3/movie/now_playing?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Popular: https://api.themoviedb.org/3/movie/popular?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Latest: https://api.themoviedb.org/3/movie/latest?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Upcoming: https://api.themoviedb.org/3/movie/upcoming?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf
+
+Search: https://api.themoviedb.org/3/search/company?api_key=658a1ff1fadd1cfd231b07ea0d4bbfaf&query={movie_name}
