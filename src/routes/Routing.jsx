@@ -3,7 +3,7 @@ import { MovieList, MovieItem, InvalidUrl, Search } from "../pages";
 
 export const Routing = () => {
   return (
-    <>
+    <div className="dark:bg-gray-900">
       <Routes>
         <Route path="/" element={<MovieList />} />
         <Route path="movie/:id" element={<MovieItem />} />
@@ -13,6 +13,6 @@ export const Routing = () => {
         <Route path="search" element={<Search />} />
         <Route path="*" element={<InvalidUrl />} />
       </Routes>
-    </>
+    </div>
   );
 };
