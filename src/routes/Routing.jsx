@@ -19,7 +19,7 @@ export const Routing = () => {
           path="movies/upcoming"
           element={<MovieList api="movie/upcoming" />}
         />
-        <Route path="search" element={<Search />} />
+        <Route path="search" element={<Search api="search/movie" />} />
         <Route path="*" element={<InvalidUrl />} />
       </Routes>
     </div>
