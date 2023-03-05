@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo192.png";
 
 export const Header = () => {
-  const [hidden, setHidden] = useState(false);
+  const [hidden, setHidden] = useState(true);
 
   const activeClass =
     "font-burtons text-base block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white";
@@ -19,11 +19,13 @@ export const Header = () => {
               DevelopedByHS
             </span>
           </Link>
+
           <div className="flex md:order-2">
             <button
               type="button"
               data-collapse-toggle="navbar-search"
               aria-controls="navbar-search"
+              onClick={() => setHidden(!hidden)}
               aria-expanded="false"
               className="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1"
             >
@@ -70,6 +72,7 @@ export const Header = () => {
             <button
               data-collapse-toggle="navbar-search"
               type="button"
+              onClick={() => setHidden(!hidden)}
               className="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
               aria-controls="navbar-search"
               aria-expanded="false"
@@ -90,8 +93,11 @@ export const Header = () => {
               </svg>
             </button>
           </div>
+
           <div
-            className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            className={`items-center justify-between ${
+              hidden ? "hidden" : ""
+            } w-full md:flex md:w-auto md:order-1`}
             id="navbar-search"
           >
             <div className="relative mt-3 md:hidden">
