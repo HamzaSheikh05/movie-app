@@ -202,7 +202,7 @@ export const Header = () => {
                     isActive ? activeClass : inActiveClass
                   }
                 >
-                  Latest
+                  High Rated
                 </NavLink>
               </li>
               <li>

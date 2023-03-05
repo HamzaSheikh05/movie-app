@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
+import ProfilePic from "../assets/Profile.png";
 
 export const Card = ({ movie }) => {
   const { id, original_title, overview, poster_path } = movie;
-  const imagePath = `https://image.tmdb.org/t/p/w500/${poster_path}`;
+  const imagePath = poster_path
+    ? `https://image.tmdb.org/t/p/w500/${poster_path}`
+    : ProfilePic;
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
       <Link to={`/movie/${id}`}>
