@@ -33,7 +33,7 @@ export const Header = () => {
   return (
     <header>
       <nav className="bg-custom-bg border-b-2 border-gray-300 px-2 sm:px-4 py-2.5 dark:bg-dark-bg dark:border-b-2 dark:border-gray-400">
-        <div className="container flex flex-wrap items-center justify-between mx-auto">
+        <div className="flex flex-wrap items-center justify-evenly mx-auto">
           <Link to="/" className="flex items-center">
             <img src={Logo} className="h-6 mr-2 sm:h-9" alt="App Logo" />
             <span className="font-burtons self-center text-2xl text-blue-300 font-semibold whitespace-nowrap dark:text-blue-300">
