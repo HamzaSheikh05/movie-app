@@ -20,7 +20,7 @@ export const Header = () => {
   }, [darkMode]);
 
   const activeClass =
-    "font-burtons text-base block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white";
+    "font-burtons text-base block py-2 pl-3 pr-4 text-white rounded bg-transparent md:text-blue-700 md:p-0 dark:text-white";
   const inActiveClass =
     "font-burtons text-base block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
@@ -32,10 +32,10 @@ export const Header = () => {
   };
   return (
     <header>
-      <nav className="bg-white border-b-2 border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-900 dark:border-b-2 dark:border-gray-400">
+      <nav className="bg-custom-bg border-b-2 border-gray-300 px-2 sm:px-4 py-2.5 dark:bg-dark-bg dark:border-b-2 dark:border-gray-400">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <Link to="/" className="flex items-center">
-            <img src={Logo} className="h-6 mr-3 sm:h-9" alt="App Logo" />
+            <img src={Logo} className="h-6 mr-2 sm:h-9" alt="App Logo" />
             <span className="font-burtons self-center text-2xl text-blue-300 font-semibold whitespace-nowrap dark:text-blue-300">
               DevelopedByHS
             </span>
@@ -47,7 +47,7 @@ export const Header = () => {
               type="button"
               onClick={() => setDarkMode(!darkMode)}
               data-toggle-dark="light"
-              className="flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-white rounded-lg border border-gray-200 toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-gray-800 focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
+              className="flex items-center p-2 mr-2 text-xs font-medium text-gray-700 bg-custom-bg rounded-lg border border-gray-200 toggle-dark-state-example hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-2 focus:ring-gray-300 dark:focus:ring-gray-500 dark:bg-dark-bg focus:outline-none dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700"
             >
               {darkMode ? (
                 <svg
@@ -121,7 +121,7 @@ export const Header = () => {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-dark-bg dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Search a Movie"
                   autoComplete="off"
                   name="search"
@@ -180,14 +180,14 @@ export const Header = () => {
                   type="text"
                   name="search"
                   id="search-navbar"
-                  className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                  className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-dark-bg dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   placeholder="Search..."
                   autoComplete="off"
                 />
               </form>
             </div>
 
-            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+            <ul className="flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
               <li>
                 <NavLink
                   to="/"

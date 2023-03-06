@@ -3,7 +3,7 @@ import { MovieList, MovieItem, InvalidUrl, Search } from "../pages";
 
 export const Routing = () => {
   return (
-    <div className="dark:bg-gray-900">
+    <div className="bg-custom-bg dark:bg-dark-bg">
       <Routes>
         <Route path="/" element={<MovieList api="movie/now_playing" />} />
         <Route path="movie/:id" element={<MovieItem />} />
