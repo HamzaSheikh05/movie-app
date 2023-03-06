@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import ErrorImage from "../assets/InvalidPage.png";
 
 export const InvalidUrl = () => {
+  useEffect(() => {
+    document.title = `Error 404: Invalid URL`;
+  });
   return (
     <main>
       <section className="flex flex-col justify-center px-3">

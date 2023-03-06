@@ -1,14 +1,10 @@
 import { Card } from "../components/Card";
 import { useFetch } from "../hooks/useFetch";
+import { useUpdateTitle } from "../hooks/useUpdateTitle";
 
-export const MovieList = ({ api }) => {
+export const MovieList = ({ api, title }) => {
   const { data } = useFetch(api);
-  /** bg-linear-gradient(
-    to right,
-    #0f0c29,
-    #302b63,
-    #24243e
-  ) */
+  useUpdateTitle(title);
   return (
     <main className="min-w-full">
       <section className="mx-auto py-7">

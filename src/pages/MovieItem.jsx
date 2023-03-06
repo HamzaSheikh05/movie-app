@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ProfilePic from "../assets/Profile.png";
+import { useUpdateTitle } from "../hooks/useUpdateTitle";
 
 export const MovieItem = () => {
   const params = useParams();
@@ -20,6 +21,8 @@ export const MovieItem = () => {
     }
     fetchIndividualMovie();
   }, []);
+
+  useUpdateTitle(item.title);
   return (
     <main>
       <section className="flex justify-around flex-wrap py-4">
