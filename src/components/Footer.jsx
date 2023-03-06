@@ -12,27 +12,30 @@ export const Footer = () => {
       <ul className="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
           <a
-            href="/"
+            href="https://www.instagram.com/saadiatrading/"
             target={"_blank"}
-            className="mr-4 hover:underline md:mr-6 "
+            className="mr-4 hover:underline md:mr-6"
+            rel="noreferrer"
           >
             Instagram
           </a>
         </li>
         <li>
           <a
-            href="/"
+            href="https://www.linkedin.com/in/hamza-s-287268118/"
             target={"_blank"}
             className="mr-4 hover:underline md:mr-6"
+            rel="noreferrer"
           >
             LinkedIn
           </a>
         </li>
         <li>
           <a
-            href="/"
+            href="https://github.com/HamzaSheikh05"
             target={"_blank"}
             className="mr-4 hover:underline md:mr-6"
+            rel="noreferrer"
           >
             Github
           </a>
