@@ -20,7 +20,7 @@ export const MovieItem = () => {
       console.log(data);
     }
     fetchIndividualMovie();
-  }, []);
+  }, [params.id]);
 
   useUpdateTitle(item.title);
   return (
