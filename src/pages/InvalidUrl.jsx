@@ -5,8 +5,8 @@ export const InvalidUrl = () => {
   return (
     <main>
       <section className="flex flex-col justify-center px-3">
-        <div className="flex flex-col items-center my-3">
-          <p className="text-6xl font-bold text-blue-500 font-burtons my-10 dark:text-white">
+        <div className="animate-pulse flex flex-col items-center my-3">
+          <p className="text-6xl font-bold text-blue-500 font-burtons my-10 dark:text-blue-300">
             Error 404: Page Not Found!
           </p>
           <div className="max-w-lg">

@@ -7,7 +7,7 @@ export const Card = ({ movie }) => {
     ? `https://image.tmdb.org/t/p/w500/${poster_path}`
     : ProfilePic;
   return (
-    <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 m-3">
+    <div className="max-w-sm bg-white border border-gray-200 rounded-lg animate-ping shadow dark:bg-gray-800 dark:border-gray-700 m-3">
       <Link to={`/movie/${id}`}>
         <img className="rounded-t-lg" src={imagePath} alt="movie-images" />
       </Link>
