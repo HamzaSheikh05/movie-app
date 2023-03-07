@@ -20,9 +20,9 @@ export const Header = () => {
   }, [darkMode]);
 
   const activeClass =
-    "font-burtons text-base block py-2 pl-3 pr-4 text-blue-300 rounded bg-transparent md:text-blue-400 md:p-0 dark:text-red-400";
+    "font-burtons text-base block py-2 pl-3 pr-4 text-blue-400 hover:text-yellow-100 rounded bg-transparent md:p-0 dark:text-red-400";
   const inActiveClass =
-    "font-burtons text-base block py-2 pl-3 pr-4 text-blue-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
+    "font-burtons text-base block py-2 pl-3 pr-4 text-gray-300 hover:text-orange-200 rounded md:p-0 md:dark:hover:text-white dark:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700";
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -36,7 +36,7 @@ export const Header = () => {
         <div className="flex flex-wrap items-center justify-evenly mx-auto">
           <Link to="/" className="flex items-center">
             <img src={Logo} className="h-6 mr-2 sm:h-9" alt="App Logo" />
-            <span className="font-burtons self-center text-2xl text-blue-300 font-semibold whitespace-nowrap dark:text-blue-400">
+            <span className="font-burtons self-center text-2xl text-gray-200 font-semibold whitespace-nowrap dark:text-blue-400">
               DevelopedByHS
             </span>
           </Link>
@@ -47,7 +47,7 @@ export const Header = () => {
               type="button"
               onClick={() => setDarkMode(!darkMode)}
               data-toggle-dark="light"
-              className="flex items-center p-2 mr-2 text-xs font-medium bg-custom-bg rounded-lg toggle-dark-state-example border dark:border-blue-300 dark:bg-dark-bg dark:text-blue-400 dark:hover:text-yellow-300"
+              className="flex items-center p-2 mr-2 text-xs font-medium bg-custom-bg rounded-lg toggle-dark-state-example text-white hover:text-blue-400 border border-gray-300 dark:border-blue-300 dark:bg-dark-bg dark:text-blue-400 dark:hover:text-yellow-300"
             >
               {darkMode ? (
                 <svg
@@ -103,7 +103,7 @@ export const Header = () => {
             <div className="relative hidden md:block">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
-                  className="w-5 h-5 text-blue-300"
+                  className="w-5 h-5 text-gray-300 dark:text-blue-300"
                   aria-hidden="true"
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -121,7 +121,7 @@ export const Header = () => {
                 <input
                   type="text"
                   id="search-navbar"
-                  className="block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-transparent dark:bg-dark-bg dark:border-blue-300 dark:placeholder-blue-100 dark:text-blue-100"
+                  className="block w-full p-2 pl-10 text-sm text-blue-100 placeholder:text-white border border-gray-300 rounded-lg bg-transparent dark:bg-dark-bg dark:border-blue-300 dark:placeholder-blue-100 dark:text-blue-100"
                   placeholder="Search a Movie"
                   autoComplete="off"
                   name="search"

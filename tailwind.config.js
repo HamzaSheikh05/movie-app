@@ -12,7 +12,7 @@ module.exports = {
       },
       backgroundImage: {
         "custom-bg":
-          "linear-gradient(to right, rgba(15, 12, 41, 1), rgba(48, 43, 99, 1), rgba(36, 36, 62, 1))",
+          "linear-gradient(to right, rgba(0, 0, 0, 1), rgba(67, 67, 67, 1), rgba(0, 0, 0, 1), rgba(67, 67, 67, 1), rgba(0, 0, 0, 1))",
         "dark-bg":
           "linear-gradient(to right, rgba(4, 0, 17, 1), rgba(0, 0, 17, 1), rgba(4, 0, 17, 1))",
       },
