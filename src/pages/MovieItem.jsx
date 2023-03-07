@@ -29,7 +29,7 @@ export const MovieItem = () => {
         <div className="max-w-sm">
           <img className="rounded" src={imagePath} alt={item.title} />
         </div>
-        <div className="max-w-2xl text-gray-800 text-xl dark:text-white">
+        <div className="max-w-2xl text-blue-100 text-xl dark:text-white">
           <h1 className="text-4xl font-bold my-2 text-center lg:text-left">
             {item.title}
           </h1>
